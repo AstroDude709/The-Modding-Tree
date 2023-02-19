@@ -15,7 +15,11 @@ addLayer("e", {
     exponent: 0.5, // Prestige currency exponent
     gainMult() { // Calculate the multiplier for main currency from bonuses
         mult = new Decimal(1)
-        return mult
+        return mult,js
+        upgrades: {js
+            11: {
+    
+            }}
     },
     gainExp() { // Calculate the exponent on main currency from bonuses
         return new Decimal(1)
@@ -24,13 +28,8 @@ addLayer("e", {
     hotkeys: [
         {key: "p", description: "P: Reset for prestige points", onPress(){if (canReset(this.layer)) doReset(this.layer)}},
     ],
-    layerShown(){return true},js
-    upgrades: {js
-    11: {js
-    title: "More Matter",
-    description: "Multiply Matter gain by 1.5.",
-    cost: new Decimal(1),},},
-    
+    layerShown(){return true}
+   
 
 
     

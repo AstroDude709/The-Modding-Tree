@@ -17,7 +17,7 @@ addLayer("e", {
         mult = new Decimal(1)
         return mult,js
         upgrades: {js
-            11: {
+            11 {
     
             }}
     },
